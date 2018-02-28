@@ -1,0 +1,6 @@
+verilog work "MUX16_4.v"
+verilog work "Gen_P.v"
+verilog work "Gen4an.v"
+verilog work "Gen1ms.v"
+verilog work "D7seg.v"
+verilog work "DISPLAY.v"

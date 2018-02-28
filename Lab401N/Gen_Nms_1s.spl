@@ -1,0 +1,10 @@
+[Inputs]
+clk
+ce
+Tmod
+[Outputs]
+CEO
+[BiDir]
+[ATTRIBUTES]
+VeriModel Gen_Nms_1s
+

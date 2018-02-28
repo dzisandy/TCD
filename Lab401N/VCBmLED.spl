@@ -1,0 +1,15 @@
+[Inputs]
+ce
+up
+L
+clk
+clr
+=di[3:0]=
+[Outputs]
+CEO
+TC
+=Q[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel VCBmLED
+

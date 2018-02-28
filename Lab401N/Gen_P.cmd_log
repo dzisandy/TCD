@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/Xilinx/Dzis/Lab401N/Gen_P.xst" -ofn "D:/Xilinx/Dzis/Lab401N/Gen_P.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 Gen_P.ngc Gen_P.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Gen_P_map.ncd Gen_P.ngd Gen_P.pcf 
+par -w -intstyle ise -ol high -t 1 Gen_P_map.ncd Gen_P.ncd Gen_P.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Gen_P.twx Gen_P.ncd -o Gen_P.twr Gen_P.pcf 

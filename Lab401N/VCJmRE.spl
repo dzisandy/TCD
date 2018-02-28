@@ -1,0 +1,12 @@
+[Inputs]
+ce
+clk
+R
+[Outputs]
+TC
+CEO
+=Q[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel VCJmRE
+

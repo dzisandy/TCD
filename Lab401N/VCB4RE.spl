@@ -1,0 +1,12 @@
+[Inputs]
+clk
+ce
+R
+[Outputs]
+CEO
+TC
+=Q[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel VCB4RE
+

@@ -1,0 +1,12 @@
+[Inputs]
+clk
+=dat[15:0]=
+=PTR[1:0]=
+[Outputs]
+ce1ms
+=An[3:0]=
+=SEG[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel DISPLAY
+

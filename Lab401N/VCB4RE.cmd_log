@@ -1,0 +1,42 @@
+xst -intstyle ise -ifn "E:/FRTK/Dzis/Lab401N/VCB4RE.xst" -ofn "E:/FRTK/Dzis/Lab401N/VCB4RE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 VCB4RE.ngc VCB4RE.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VCB4RE_map.ncd VCB4RE.ngd VCB4RE.pcf 
+par -w -intstyle ise -ol high -t 1 VCB4RE_map.ncd VCB4RE.ncd VCB4RE.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VCB4RE.twx VCB4RE.ncd -o VCB4RE.twr VCB4RE.pcf 
+bitgen -intstyle ise -f VCB4RE.ut VCB4RE.ncd 
+vhdtdtfi -lib work E:/FRTK/Dzis/Lab401N/VCB4RE.v -lang verilog -prj Lab401N -o VCB4RE.spl -module VCB4RE -template C:/Xilinx/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e VCB4RE.spl E:/FRTK/Dzis/Lab401N/VCB4RE.sym 
+vhdtdtfi -lang verilog -prj Lab401N -o E:/FRTK/Dzis/Lab401N/VCB4RE.tfi -lib work E:/FRTK/Dzis/Lab401N//VCB4RE.v -module VCB4RE -template C:/Xilinx/14.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "E:/FRTK/Dzis/Lab401N/VCB4RE.xst" -ofn "E:/FRTK/Dzis/Lab401N/VCB4RE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 VCB4RE.ngc VCB4RE.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VCB4RE_map.ncd VCB4RE.ngd VCB4RE.pcf 
+par -w -intstyle ise -ol high -t 1 VCB4RE_map.ncd VCB4RE.ncd VCB4RE.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VCB4RE.twx VCB4RE.ncd -o VCB4RE.twr VCB4RE.pcf 
+bitgen -intstyle ise -f VCB4RE.ut VCB4RE.ncd 
+xst -intstyle ise -ifn "E:/FRTK/Dzis/Lab401N/VCB4RE.xst" -ofn "E:/FRTK/Dzis/Lab401N/VCB4RE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 VCB4RE.ngc VCB4RE.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VCB4RE_map.ncd VCB4RE.ngd VCB4RE.pcf 
+par -w -intstyle ise -ol high -t 1 VCB4RE_map.ncd VCB4RE.ncd VCB4RE.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VCB4RE.twx VCB4RE.ncd -o VCB4RE.twr VCB4RE.pcf 
+bitgen -intstyle ise -f VCB4RE.ut VCB4RE.ncd 
+xst -intstyle ise -ifn "E:/FRTK/Dzis/Lab401N/VCB4RE.xst" -ofn "E:/FRTK/Dzis/Lab401N/VCB4RE.syr" 
+xst -intstyle ise -ifn "E:/FRTK/Dzis/Lab401N/VCB4RE.xst" -ofn "E:/FRTK/Dzis/Lab401N/VCB4RE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 VCB4RE.ngc VCB4RE.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VCB4RE_map.ncd VCB4RE.ngd VCB4RE.pcf 
+par -w -intstyle ise -ol high -t 1 VCB4RE_map.ncd VCB4RE.ncd VCB4RE.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VCB4RE.twx VCB4RE.ncd -o VCB4RE.twr VCB4RE.pcf 
+xst -intstyle ise -ifn "E:/FRTK/Dzis/Lab401N/VCB4RE.xst" -ofn "E:/FRTK/Dzis/Lab401N/VCB4RE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 VCB4RE.ngc VCB4RE.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VCB4RE_map.ncd VCB4RE.ngd VCB4RE.pcf 
+par -w -intstyle ise -ol high -t 1 VCB4RE_map.ncd VCB4RE.ncd VCB4RE.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VCB4RE.twx VCB4RE.ncd -o VCB4RE.twr VCB4RE.pcf 
+vhdtdtfi -lib work E:/FRTK/Dzis/Lab401N/VCB4RE.v -lang verilog -prj Lab401N -o VCB4RE.spl -module VCB4RE -template C:/Xilinx/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e VCB4RE.spl E:/FRTK/Dzis/Lab401N/VCB4RE.sym 
+xst -intstyle ise -ifn "E:/FRTK/Dzis/Lab401N/VCB4RE.xst" -ofn "E:/FRTK/Dzis/Lab401N/VCB4RE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 VCB4RE.ngc VCB4RE.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VCB4RE_map.ncd VCB4RE.ngd VCB4RE.pcf 
+par -w -intstyle ise -ol high -t 1 VCB4RE_map.ncd VCB4RE.ncd VCB4RE.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VCB4RE.twx VCB4RE.ncd -o VCB4RE.twr VCB4RE.pcf 
+vhdtdtfi -lib work E:/FRTK/Dzis/Lab401N/VCB4RE.v -lang verilog -prj Lab401N -o VCB4RE.spl -module VCB4RE -template C:/Xilinx/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e VCB4RE.spl E:/FRTK/Dzis/Lab401N/VCB4RE.sym 
+vhdtdtfi -lang verilog -prj Lab401N -o E:/Dzis/Lab401N/VCB4RE.tfi -lib work E:/Dzis/Lab401N//VCB4RE.v -module VCB4RE -template D:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 

@@ -1,0 +1,8 @@
+Release 14.4 Drc P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Thu Feb 15 11:51:22 2018
+
+drc -z VCB4RE.ncd VCB4RE.pcf
+
+DRC detected 0 errors and 0 warnings.

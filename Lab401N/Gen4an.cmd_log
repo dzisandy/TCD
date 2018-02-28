@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/Dzis/Lab401N/Gen4an.xst" -ofn "E:/Dzis/Lab401N/Gen4an.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 Gen4an.ngc Gen4an.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Gen4an_map.ncd Gen4an.ngd Gen4an.pcf 
+par -w -intstyle ise -ol high -t 1 Gen4an_map.ncd Gen4an.ncd Gen4an.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Gen4an.twx Gen4an.ncd -o Gen4an.twr Gen4an.pcf 

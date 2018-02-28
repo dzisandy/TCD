@@ -1,0 +1,20 @@
+Running: D:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o E:/Dzis/Lab401N/tf_VCBmLED_isim_beh.exe -prj E:/Dzis/Lab401N/tf_VCBmLED_beh.prj work.tf_VCBmLED work.glbl 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/Dzis/Lab401N/VCBmLED.v" into library work
+Analyzing Verilog file "E:/Dzis/Lab401N/tf_VCBmLED.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module VCBmLED
+Compiling module tf_VCBmLED
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: Системе не удается найти указанный путь, "isim\tf_VCBmLED_isim_beh.exe.sim\libPortability.dll".
+Compiled 3 Verilog Units
+Built simulation executable E:/Dzis/Lab401N/tf_VCBmLED_isim_beh.exe
+Fuse Memory Usage: 27644 KB
+Fuse CPU Usage: 515 ms

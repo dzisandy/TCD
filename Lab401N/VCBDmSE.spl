@@ -1,0 +1,12 @@
+[Inputs]
+ce
+clk
+s
+[Outputs]
+TC
+CEO
+=Q[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel VCBDmSE
+

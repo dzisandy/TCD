@@ -1,0 +1,12 @@
+[Inputs]
+clk
+ce
+r
+[Outputs]
+CEO
+TC
+=Y[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel VCGrey4Re
+

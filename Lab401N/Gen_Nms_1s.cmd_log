@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "D:/Xilinx/Dzis/Lab401N/Gen_Nms_1s.xst" -ofn "D:/Xilinx/Dzis/Lab401N/Gen_Nms_1s.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 Gen_Nms_1s.ngc Gen_Nms_1s.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Gen_Nms_1s_map.ncd Gen_Nms_1s.ngd Gen_Nms_1s.pcf 
+par -w -intstyle ise -ol high -t 1 Gen_Nms_1s_map.ncd Gen_Nms_1s.ncd Gen_Nms_1s.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Gen_Nms_1s.twx Gen_Nms_1s.ncd -o Gen_Nms_1s.twr Gen_Nms_1s.pcf 
+xst -intstyle ise -ifn "E:/FRTK/Dzis/Lab401N/Gen_Nms_1s.xst" -ofn "E:/FRTK/Dzis/Lab401N/Gen_Nms_1s.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 Gen_Nms_1s.ngc Gen_Nms_1s.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Gen_Nms_1s_map.ncd Gen_Nms_1s.ngd Gen_Nms_1s.pcf 
+par -w -intstyle ise -ol high -t 1 Gen_Nms_1s_map.ncd Gen_Nms_1s.ncd Gen_Nms_1s.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Gen_Nms_1s.twx Gen_Nms_1s.ncd -o Gen_Nms_1s.twr Gen_Nms_1s.pcf 
+vhdtdtfi -lib work E:/FRTK/Dzis/Lab401N/Gen_Nms_1s.v -lang verilog -prj Lab401N -o Gen_Nms_1s.spl -module Gen_Nms_1s -template C:/Xilinx/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Gen_Nms_1s.spl E:/FRTK/Dzis/Lab401N/Gen_Nms_1s.sym 
+xst -intstyle ise -ifn "E:/Dzis/Lab401N/Gen_Nms_1s.xst" -ofn "E:/Dzis/Lab401N/Gen_Nms_1s.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 Gen_Nms_1s.ngc Gen_Nms_1s.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Gen_Nms_1s_map.ncd Gen_Nms_1s.ngd Gen_Nms_1s.pcf 
+par -w -intstyle ise -ol high -t 1 Gen_Nms_1s_map.ncd Gen_Nms_1s.ncd Gen_Nms_1s.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Gen_Nms_1s.twx Gen_Nms_1s.ncd -o Gen_Nms_1s.twr Gen_Nms_1s.pcf 

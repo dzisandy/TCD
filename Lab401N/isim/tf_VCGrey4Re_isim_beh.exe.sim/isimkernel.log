@@ -1,0 +1,28 @@
+Command line:
+   tf_VCGrey4Re_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58065
+
+Wed Feb 28 16:56:05 2018
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 876.577 Meg
+
+ Total Signals          : 22
+ Total Nets             : 22
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 16
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 174
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 1191.15 Meg
+
+Wed Feb 28 16:56:57 2018
+

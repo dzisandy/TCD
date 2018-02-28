@@ -1,0 +1,118 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.2
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Sch1_lab401.vf
+// /___/   /\     Timestamp : 02/28/2018 15:03:07
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog E:/Dzis/Lab401N/Sch1_lab401.vf -w E:/Dzis/Lab401N/Sch1_lab401.sch
+//Design Name: Sch1_lab401
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module OBUF8_MXILINX_Sch1_lab401(I, 
+                                 O);
+
+    input [7:0] I;
+   output [7:0] O;
+   
+   
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_30 (.I(I[0]), 
+                 .O(O[0]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_31 (.I(I[1]), 
+                 .O(O[1]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_32 (.I(I[2]), 
+                 .O(O[2]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_33 (.I(I[3]), 
+                 .O(O[3]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_34 (.I(I[7]), 
+                 .O(O[7]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_35 (.I(I[6]), 
+                 .O(O[6]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_36 (.I(I[5]), 
+                 .O(O[5]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_37 (.I(I[4]), 
+                 .O(O[4]));
+endmodule
+`timescale 1ns / 1ps
+
+module Sch1_lab401(BTN0, 
+                   F50MHz, 
+                   SW, 
+                   AN, 
+                   LED, 
+                   SEG);
+
+    input BTN0;
+    input F50MHz;
+    input [7:0] SW;
+   output [3:0] AN;
+   output [7:0] LED;
+   output [7:0] SEG;
+   
+   wire CEO4;
+   wire ce1ms;
+   wire [15:0] dat;
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_9;
+   
+   VCGrey4Re  XLXI_1 (.ce(CEO4), 
+                     .clk(XLXN_9), 
+                     .r(BTN0), 
+                     .CEO(XLXN_1), 
+                     .TC(), 
+                     .Y(dat[3:0]));
+   VCBDmSE  XLXI_2 (.ce(XLXN_1), 
+                   .clk(XLXN_9), 
+                   .s(BTN0), 
+                   .CEO(XLXN_2), 
+                   .Q(dat[7:4]), 
+                   .TC());
+   VCD4RE  XLXI_3 (.ce(XLXN_2), 
+                  .clk(XLXN_9), 
+                  .R(BTN0), 
+                  .CEO(XLXN_3), 
+                  .Q(dat[11:8]), 
+                  .TC());
+   VCJmRE  XLXI_4 (.ce(XLXN_3), 
+                  .clk(XLXN_9), 
+                  .R(BTN0), 
+                  .CEO(), 
+                  .Q(dat[15:12]), 
+                  .TC());
+   DISPLAY  XLXI_5 (.clk(XLXN_9), 
+                   .dat(dat[15:0]), 
+                   .PTR(SW[5:4]), 
+                   .An(AN[3:0]), 
+                   .ce1ms(ce1ms), 
+                   .SEG(SEG[7:0]));
+   Gen_Nms_1s  XLXI_6 (.ce(ce1ms), 
+                      .clk(XLXN_9), 
+                      .Tmod(SW[7]), 
+                      .CEO(CEO4));
+   BUFG  XLXI_7 (.I(F50MHz), 
+                .O(XLXN_9));
+   (* HU_SET = "XLXI_8_0" *) 
+   OBUF8_MXILINX_Sch1_lab401  XLXI_8 (.I(SW[7:0]), 
+                                     .O(LED[7:0]));
+endmodule

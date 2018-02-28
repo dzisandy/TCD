@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/FRTK/Dzis/Lab401N/tf_VCB4RE_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tf_VCB4RE" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/tf_VCB4RE/CEO" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CEO</obj_property>
+      <obj_property name="ObjectShortName">CEO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tf_VCB4RE/TC" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">TC</obj_property>
+      <obj_property name="ObjectShortName">TC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tf_VCB4RE/Q" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Q[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[3:0]</obj_property>
+      <obj_property name="label">Q[3:0]</obj_property>
+      <wvobject fp_name="/tf_VCB4RE/Q[3]" type="logic" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">Q[3]</obj_property>
+         <obj_property name="label">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tf_VCB4RE/Q[2]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">Q[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tf_VCB4RE/Q[1]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">Q[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tf_VCB4RE/Q[0]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">Q[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tf_VCB4RE/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tf_VCB4RE/ce" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tf_VCB4RE/R" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">R</obj_property>
+      <obj_property name="ObjectShortName">R</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tf_VCB4RE/Tclk" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Tclk[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Tclk[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tf_VCB4RE/Tce" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Tce[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Tce[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,17 @@
+
+
+
+// Instantiate the module
+VCBmLED instance_name (
+    .ce(ce), 
+    .up(up), 
+    .L(L), 
+    .clk(clk), 
+    .clr(clr), 
+    .di(di), 
+    .Q(Q), 
+    .CEO(CEO), 
+    .TC(TC)
+    );
+
+
