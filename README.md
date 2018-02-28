@@ -6,7 +6,8 @@
 В течение курса студентам предлагается выполнить 4 лабораторные работы на ПЛИС фирмы XILINX.
 
 ## Навигация
-1. Лабораторная работа 401N (3 вариант)[условие](https://github.com/dzisandy/ML_Mipt_2_course/blob/master/week1/1-1.Znakomstvo_s_mashinnym_obucheniem.pdf)
+1. **Лабораторная работа 401N (3 вариант)**[условие](https://github.com/dzisandy/TCD/blob/master/Materials/PDF_Lab_TKU_2018/Lab401_170907.pdf) [программа](https://github.com/dzisandy/TCD/tree/master/Lab401N) [выполнение(скриншоты)]
+В данной работе все составные элементы написаны на языке Verilog, практический интерес имеют файлы *.v, названные в 
 
 
 ## Обо мне
