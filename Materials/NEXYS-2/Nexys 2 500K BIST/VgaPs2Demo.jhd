@@ -1,0 +1,17 @@
+MODULE VgaPs2Demo
+	SUBMODULE DispCtrl
+		INSTANCE instDispCtrl
+	SUBMODULE Synchro
+		INSTANCE instSynchro
+	SUBMODULE mouse_controller
+		INSTANCE instMouseController
+	SUBMODULE mouse_displayer
+		INSTANCE instMouseDisplayer
+	SUBMODULE ps2interface
+		INSTANCE instPs2Interface
+	SUBMODULE gnd10
+		INSTANCE instGnd10
+	SUBMODULE VideoRom
+		INSTANCE instVideoRom
+	SUBMODULE clkdllctrl
+		INSTANCE instClkDllCtrl

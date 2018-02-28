@@ -6,7 +6,7 @@
 В течение курса студентам предлагается выполнить 4 лабораторные работы на ПЛИС фирмы XILINX.
 
 ## Навигация
-[1. Знакомство с машинным обучением](https://github.com/dzisandy/ML_Mipt_2_course/blob/master/week1/1-1.Znakomstvo_s_mashinnym_obucheniem.pdf)
+1. Лабораторная работа 401N (3 вариант)[условие](https://github.com/dzisandy/ML_Mipt_2_course/blob/master/week1/1-1.Znakomstvo_s_mashinnym_obucheniem.pdf)
 
 
 ## Обо мне
