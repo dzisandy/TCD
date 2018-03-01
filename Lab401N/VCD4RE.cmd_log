@@ -1,9 +1,0 @@
-xst -intstyle ise -ifn "E:/FRTK/Dzis/Lab401N/VCD4RE.xst" -ofn "E:/FRTK/Dzis/Lab401N/VCD4RE.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 VCD4RE.ngc VCD4RE.ngd  
-map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VCD4RE_map.ncd VCD4RE.ngd VCD4RE.pcf 
-par -w -intstyle ise -ol high -t 1 VCD4RE_map.ncd VCD4RE.ncd VCD4RE.pcf 
-trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VCD4RE.twx VCD4RE.ncd -o VCD4RE.twr VCD4RE.pcf 
-vhdtdtfi -lib work E:/FRTK/Dzis/Lab401N/VCD4RE.v -lang verilog -prj Lab401N -o VCD4RE.spl -module VCD4RE -template C:/Xilinx/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e VCD4RE.spl E:/FRTK/Dzis/Lab401N/VCD4RE.sym 
-vhdtdtfi -lib work E:/Dzis/Lab401N/VCD4RE.v -lang verilog -prj Lab401N -o VCD4RE.spl -module VCD4RE -template D:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e VCD4RE.spl E:/Dzis/Lab401N/VCD4RE.sym 

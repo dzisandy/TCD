@@ -22,7 +22,7 @@ module DISPLAY(
     input clk,
 	 input [15:0]dat,
 	 input [1:0]PTR,
-	 output wire [3:0]An,
+	 output wire [3:0]AN,
 	 output wire [7:0]SEG,
 	 output wire ce1ms
     );

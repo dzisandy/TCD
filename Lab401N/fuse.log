@@ -1,20 +1,19 @@
-Running: D:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o E:/Dzis/Lab401N/tf_VCBmLED_isim_beh.exe -prj E:/Dzis/Lab401N/tf_VCBmLED_beh.prj work.tf_VCBmLED work.glbl 
-ISim P.28xd (signature 0xa0883be4)
-Number of CPUs detected in this system: 4
-Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o G:/Dzis/Lab401N/tf_VCDCLED_isim_beh.exe -prj G:/Dzis/Lab401N/tf_VCDCLED_beh.prj work.tf_VCDCLED work.glbl 
+ISim P.49d (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
-Analyzing Verilog file "E:/Dzis/Lab401N/VCBmLED.v" into library work
-Analyzing Verilog file "E:/Dzis/Lab401N/tf_VCBmLED.v" into library work
-Analyzing Verilog file "D:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Analyzing Verilog file "G:/Dzis/Lab401N/VCDCLED.v" into library work
+Analyzing Verilog file "G:/Dzis/Lab401N/tf_VCDCLED.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Compiling module VCBmLED
-Compiling module tf_VCBmLED
+Fuse Memory Usage: 64928 KB
+Fuse CPU Usage: 421 ms
+Compiling module VCDCLED
+Compiling module tf_VCDCLED
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: Системе не удается найти указанный путь, "isim\tf_VCBmLED_isim_beh.exe.sim\libPortability.dll".
-Compiled 3 Verilog Units
-Built simulation executable E:/Dzis/Lab401N/tf_VCBmLED_isim_beh.exe
-Fuse Memory Usage: 27644 KB
-Fuse CPU Usage: 515 ms
+ERROR:Simulator:904 - Unable to remove previous simulation file isim/tf_VCDCLED_isim_beh.exe.sim/tf_VCDCLED_isim_beh.exe. Please check if you have another instance of this simulation running on your system, terminate it and then recompile your design. System Error Message: boost::filesystem::remove: Отказано в доступе: "isim\tf_VCDCLED_isim_beh.exe.sim\tf_VCDCLED_isim_beh.exe"
+ERROR:Simulator:861 - Failed to link the design

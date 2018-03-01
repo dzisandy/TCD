@@ -69,6 +69,8 @@ module tf_VCBmLED;
 	#171; L = 1;
 	#192; L = 0;
 	#215; up = 1;
+	#216; L = 1;
+	#250; L = 0;
 	end
       
 endmodule

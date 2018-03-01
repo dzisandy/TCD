@@ -4,14 +4,14 @@
 //   ____  ____ 
 //  /   /\/   / 
 // /___/  \  /    Vendor: Xilinx 
-// \   \   \/     Version : 14.2
+// \   \   \/     Version : 14.4
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Sch1_lab401.vf
-// /___/   /\     Timestamp : 02/28/2018 15:03:07
+// /___/   /\     Timestamp : 03/01/2018 12:25:05
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan3e -verilog E:/Dzis/Lab401N/Sch1_lab401.vf -w E:/Dzis/Lab401N/Sch1_lab401.sch
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog G:/Dzis/Lab401N/Sch1_lab401.vf -w G:/Dzis/Lab401N/Sch1_lab401.sch
 //Design Name: Sch1_lab401
 //Device: spartan3e
 //Purpose:
@@ -70,49 +70,49 @@ module Sch1_lab401(BTN0,
    
    wire CEO4;
    wire ce1ms;
+   wire clk;
    wire [15:0] dat;
    wire XLXN_1;
    wire XLXN_2;
    wire XLXN_3;
-   wire XLXN_9;
    
    VCGrey4Re  XLXI_1 (.ce(CEO4), 
-                     .clk(XLXN_9), 
+                     .clk(clk), 
                      .r(BTN0), 
                      .CEO(XLXN_1), 
                      .TC(), 
                      .Y(dat[3:0]));
    VCBDmSE  XLXI_2 (.ce(XLXN_1), 
-                   .clk(XLXN_9), 
+                   .clk(clk), 
                    .s(BTN0), 
                    .CEO(XLXN_2), 
                    .Q(dat[7:4]), 
                    .TC());
    VCD4RE  XLXI_3 (.ce(XLXN_2), 
-                  .clk(XLXN_9), 
+                  .clk(clk), 
                   .R(BTN0), 
                   .CEO(XLXN_3), 
                   .Q(dat[11:8]), 
                   .TC());
    VCJmRE  XLXI_4 (.ce(XLXN_3), 
-                  .clk(XLXN_9), 
+                  .clk(clk), 
                   .R(BTN0), 
                   .CEO(), 
                   .Q(dat[15:12]), 
                   .TC());
-   DISPLAY  XLXI_5 (.clk(XLXN_9), 
+   DISPLAY  XLXI_5 (.clk(clk), 
                    .dat(dat[15:0]), 
                    .PTR(SW[5:4]), 
                    .An(AN[3:0]), 
                    .ce1ms(ce1ms), 
                    .SEG(SEG[7:0]));
-   Gen_Nms_1s  XLXI_6 (.ce(ce1ms), 
-                      .clk(XLXN_9), 
-                      .Tmod(SW[7]), 
-                      .CEO(CEO4));
    BUFG  XLXI_7 (.I(F50MHz), 
-                .O(XLXN_9));
+                .O(clk));
    (* HU_SET = "XLXI_8_0" *) 
    OBUF8_MXILINX_Sch1_lab401  XLXI_8 (.I(SW[7:0]), 
                                      .O(LED[7:0]));
+   GenNms1s  XLXI_11 (.ce(ce1ms), 
+                     .clk(clk), 
+                     .Tmod(SW[7]), 
+                     .CEO(CEO4));
 endmodule

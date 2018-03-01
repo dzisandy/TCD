@@ -1,8 +1,0 @@
-Release 14.2 Drc P.28xd (nt64)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
-
-Wed Feb 28 15:08:12 2018
-
-drc -z Sch1_lab401.ncd Sch1_lab401.pcf
-
-DRC detected 0 errors and 0 warnings.

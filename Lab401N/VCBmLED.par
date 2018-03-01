@@ -1,13 +1,13 @@
-Release 14.2 par P.28xd (nt64)
+Release 14.4 par P.49d (nt)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-E3EV0TT::  Wed Feb 28 16:52:14 2018
+MIPT-217LK::  Thu Feb 22 11:58:12 2018
 
 par -w -intstyle ise -ol high -t 1 VCBmLED_map.ncd VCBmLED.ncd VCBmLED.pcf 
 
 
 Constraints file: VCBmLED.pcf.
-Loading device for application Rf_Device from file '3s500e.nph' in environment D:\Xilinx\14.2\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.4\ISE_DS\ISE\.
    "VCBmLED" is an NCD, version 3.2, device xc3s500e, package fg320, speed -5
 
 Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
@@ -19,7 +19,7 @@ INFO:Par:282 - No user timing constraints were detected or you have set the opti
    reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
    Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
 
-Device speed data version:  "PRODUCTION 1.27 2012-07-09".
+Device speed data version:  "PRODUCTION 1.27 2012-12-04".
 
 
 Design Summary Report:
@@ -57,46 +57,46 @@ Total REAL time at the beginning of Placer: 1 secs
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:ec) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:ec) REAL time: 2 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:ec) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:ec) REAL time: 2 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:ec) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:ec) REAL time: 2 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 ...........
-Phase 4.2  Initial Clock and IO Placement (Checksum:1208eb95) REAL time: 1 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:1208eb95) REAL time: 2 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:1208eb95) REAL time: 1 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:1208eb95) REAL time: 2 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:1208eb95) REAL time: 1 secs 
+Phase 6.36  Local Placement Optimization (Checksum:1208eb95) REAL time: 2 secs 
 
 Phase 7.3  Local Placement Optimization
 ............
-Phase 7.3  Local Placement Optimization (Checksum:a2df314d) REAL time: 1 secs 
+Phase 7.3  Local Placement Optimization (Checksum:a2df314d) REAL time: 2 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:a2df314d) REAL time: 1 secs 
+Phase 8.5  Local Placement Optimization (Checksum:a2df314d) REAL time: 2 secs 
 
 Phase 9.8  Global Placement
 ..
-Phase 9.8  Global Placement (Checksum:26b73c4a) REAL time: 3 secs 
+Phase 9.8  Global Placement (Checksum:26b73c4a) REAL time: 5 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:26b73c4a) REAL time: 3 secs 
+Phase 10.5  Local Placement Optimization (Checksum:26b73c4a) REAL time: 5 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:3075da54) REAL time: 3 secs 
+Phase 11.18  Placement Optimization (Checksum:3075da54) REAL time: 5 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:3075da54) REAL time: 3 secs 
+Phase 12.5  Local Placement Optimization (Checksum:3075da54) REAL time: 5 secs 
 
-Total REAL time to Placer completion: 3 secs 
-Total CPU  time to Placer completion: 2 secs 
+Total REAL time to Placer completion: 5 secs 
+Total CPU  time to Placer completion: 5 secs 
 Writing design to file VCBmLED.ncd
 
 
@@ -104,32 +104,32 @@ Writing design to file VCBmLED.ncd
 Starting Router
 
 
-Phase  1  : 60 unrouted;      REAL time: 6 secs 
+Phase  1  : 60 unrouted;      REAL time: 10 secs 
 
-Phase  2  : 55 unrouted;      REAL time: 6 secs 
+Phase  2  : 55 unrouted;      REAL time: 10 secs 
 
-Phase  3  : 3 unrouted;      REAL time: 6 secs 
+Phase  3  : 3 unrouted;      REAL time: 10 secs 
 
-Phase  4  : 12 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  4  : 12 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
 Updating file: VCBmLED.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Total REAL time to Router completion: 7 secs 
-Total CPU time to Router completion: 6 secs 
+Total REAL time to Router completion: 12 secs 
+Total CPU time to Router completion: 12 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -184,10 +184,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 8 secs 
-Total CPU time to PAR completion: 6 secs 
+Total REAL time to PAR completion: 12 secs 
+Total CPU time to PAR completion: 12 secs 
 
-Peak Memory Usage:  329 MB
+Peak Memory Usage:  178 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

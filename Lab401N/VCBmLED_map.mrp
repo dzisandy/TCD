@@ -1,4 +1,4 @@
-Release 14.2 Map P.28xd (nt64)
+Release 14.4 Map P.49d (nt)
 Xilinx Mapping Report File for Design 'VCBmLED'
 
 Design Information
@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Wed Feb 28 16:52:08 2018
+Mapped Date    : Thu Feb 22 11:58:08 2018
 
 Design Summary
 --------------
@@ -35,9 +35,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                3.00
 
-Peak Memory Usage:  327 MB
+Peak Memory Usage:  167 MB
 Total REAL time to MAP completion:  2 secs 
-Total CPU time to MAP completion:   1 secs 
+Total CPU time to MAP completion:   2 secs 
 
 NOTES:
 

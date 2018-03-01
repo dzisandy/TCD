@@ -1,0 +1,2 @@
+vhdtdtfi -lib work G:/Dzis/Lab401N/GenNms1s.v -lang verilog -prj Lab401N -o GenNms1s.spl -module GenNms1s -template C:/Xilinx/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e GenNms1s.spl G:/Dzis/Lab401N/GenNms1s.sym 

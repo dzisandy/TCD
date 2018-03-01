@@ -1,13 +1,13 @@
 --------------------------------------------------------------------------------
-Release 14.2 Trace  (nt64)
+Release 14.4 Trace  (nt)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-D:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
--n 3 -fastpaths -xml VCBmLED.twx VCBmLED.ncd -o VCBmLED.twr VCBmLED.pcf
+C:\Xilinx\14.4\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml VCBmLED.twx VCBmLED.ncd -o VCBmLED.twr VCBmLED.pcf
 
 Design file:              VCBmLED.ncd
 Physical constraint file: VCBmLED.pcf
-Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2012-07-09)
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2012-12-04)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -84,14 +84,14 @@ up             |TC             |    6.648|
 ---------------+---------------+---------+
 
 
-Analysis completed Wed Feb 28 16:52:26 2018 
+Analysis completed Thu Feb 22 11:58:29 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 217 MB
+Peak Memory Usage: 99 MB
 
 
 

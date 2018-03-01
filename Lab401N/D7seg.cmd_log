@@ -1,5 +1,0 @@
-xst -intstyle ise -ifn "D:/Xilinx/Dzis/Lab401N/D7seg.xst" -ofn "D:/Xilinx/Dzis/Lab401N/D7seg.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 D7seg.ngc D7seg.ngd  
-map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o D7seg_map.ncd D7seg.ngd D7seg.pcf 
-par -w -intstyle ise -ol high -t 1 D7seg_map.ncd D7seg.ncd D7seg.pcf 
-trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml D7seg.twx D7seg.ncd -o D7seg.twr D7seg.pcf 

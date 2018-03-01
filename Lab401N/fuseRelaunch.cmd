@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "E:/Dzis/Lab401N/tf_VCBmLED_isim_beh.exe" -prj "E:/Dzis/Lab401N/tf_VCBmLED_beh.prj" "work.tf_VCBmLED" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "G:/Dzis/Lab401N/tf_VCDCLED_isim_beh.exe" -prj "G:/Dzis/Lab401N/tf_VCDCLED_beh.prj" "work.tf_VCDCLED" "work.glbl" 

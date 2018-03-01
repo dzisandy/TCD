@@ -1,0 +1,28 @@
+Command line:
+   tf_VCDCLED_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1089
+
+Thu Mar 01 12:27:26 2018
+
+
+ Elaboration Time: 0.15625 sec
+
+ Current Memory Usage: 332.435 Meg
+
+ Total Signals          : 22
+ Total Nets             : 23
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 16
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 175
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 333.484 Meg
+
+Thu Mar 01 12:34:51 2018
+
