@@ -1,0 +1,445 @@
+Release 14.4 - xst P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: MIL_RXD.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MIL_RXD.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MIL_RXD"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : MIL_RXD
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "MIL_RXD.v" in library work
+Module <MIL_RXD> compiled
+No errors in compilation
+Analysis of file <"MIL_RXD.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <MIL_RXD> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <MIL_RXD>.
+Module <MIL_RXD> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <MIL_RXD>.
+    Related source file is "MIL_RXD.v".
+    Found 1-bit register for signal <FT_cp>.
+    Found 1-bit register for signal <T_dat_rx>.
+    Found 7-bit up counter for signal <cb_tact>.
+    Found 16-bit register for signal <data>.
+    Found 1-bit register for signal <en_rx>.
+    Found 8-bit comparator greatequal for signal <ok_SY_CW>.
+    Found 8-bit comparator greatequal for signal <ok_SY_DW>.
+    Found 1-bit register for signal <sr_dat>.
+    Found 7-bit up counter for signal <cb_ce>.
+    Found 7-bit comparator less for signal <cb_ce$cmp_lt0000> created at line 75.
+    Found 7-bit up counter for signal <cb_rx_bit>.
+    Found 8-bit up counter for signal <cb_SY_CW>.
+    Found 8-bit up counter for signal <cb_SY_DW>.
+    Found 7-bit up counter for signal <cb_we_bit>.
+    Found 7-bit comparator greater for signal <en_wr$cmp_gt0000> created at line 103.
+    Found 7-bit comparator less for signal <en_wr$cmp_lt0000> created at line 103.
+    Found 2-bit register for signal <N_delay>.
+    Found 1-bit xor2 for signal <ok_rx$xor0000> created at line 108.
+    Found 2-bit register for signal <P_delay>.
+    Found 75-bit register for signal <sr_RXN>.
+    Found 75-bit register for signal <sr_RXP>.
+    Summary:
+	inferred   6 Counter(s).
+	inferred 174 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+Unit <MIL_RXD> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 5
+ 7-bit up counter                                      : 3
+ 8-bit up counter                                      : 2
+# Registers                                            : 159
+ 1-bit register                                        : 158
+ 16-bit register                                       : 1
+# Comparators                                          : 4
+ 7-bit comparator greater                              : 1
+ 7-bit comparator less                                 : 1
+ 8-bit comparator greatequal                           : 2
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 5
+ 7-bit up counter                                      : 3
+ 8-bit up counter                                      : 2
+# Registers                                            : 174
+ Flip-Flops                                            : 174
+# Comparators                                          : 4
+ 7-bit comparator greater                              : 1
+ 7-bit comparator less                                 : 1
+ 8-bit comparator greatequal                           : 2
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <MIL_RXD> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MIL_RXD, actual ratio is 2.
+
+Final Macro Processing ...
+
+Processing Unit <MIL_RXD> :
+	Found 2-bit shift register for signal <P_delay_1>.
+	Found 2-bit shift register for signal <N_delay_1>.
+	Found 75-bit shift register for signal <sr_RXN_74>.
+	Found 75-bit shift register for signal <sr_RXP_74>.
+Unit <MIL_RXD> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 57
+ Flip-Flops                                            : 57
+# Shift Registers                                      : 4
+ 2-bit shift register                                  : 2
+ 75-bit shift register                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MIL_RXD.ngr
+Top Level Output File Name         : MIL_RXD
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 43
+
+Cell Usage :
+# BELS                             : 100
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 14
+#      LUT2                        : 11
+#      LUT3                        : 7
+#      LUT3_D                      : 1
+#      LUT3_L                      : 1
+#      LUT4                        : 21
+#      LUT4_D                      : 4
+#      LUT4_L                      : 3
+#      MUXCY                       : 14
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 61
+#      FD                          : 5
+#      FDE                         : 16
+#      FDR                         : 27
+#      FDRE                        : 7
+#      FDRS                        : 3
+#      FDSE                        : 3
+# Shift Registers                  : 12
+#      SRL16                       : 4
+#      SRLC16                      : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 42
+#      IBUF                        : 2
+#      OBUF                        : 40
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       49  out of   4656     1%  
+ Number of Slice Flip Flops:             61  out of   9312     0%  
+ Number of 4 input LUTs:                 80  out of   9312     0%  
+    Number used as logic:                68
+    Number used as Shift registers:      12
+ Number of IOs:                          43
+ Number of bonded IOBs:                  43  out of    232    18%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 73    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.319ns (Maximum Frequency: 188.019MHz)
+   Minimum input arrival time before clock: 4.676ns
+   Maximum output required time after clock: 7.233ns
+   Maximum combinational path delay: 6.331ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.319ns (frequency: 188.019MHz)
+  Total number of paths / destination ports: 741 / 138
+-------------------------------------------------------------------------
+Delay:               5.319ns (Levels of Logic = 3)
+  Source:            cb_SY_DW_4 (FF)
+  Destination:       en_rx (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cb_SY_DW_4 to en_rx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.514   0.532  cb_SY_DW_4 (cb_SY_DW_4)
+     LUT4:I0->O            1   0.612   0.360  ok_SY_DW1_SW0 (N8)
+     LUT4:I3->O            2   0.612   0.532  ok_SY_DW1 (ok_SY_DW_OBUF)
+     LUT2:I0->O           10   0.612   0.750  en_rx_or00001 (en_rx_or0000)
+     FDSE:S                    0.795          en_rx
+    ----------------------------------------
+    Total                      5.319ns (3.145ns logic, 2.174ns route)
+                                       (59.1% logic, 40.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Offset:              4.676ns (Levels of Logic = 3)
+  Source:            In_P (PAD)
+  Destination:       cb_tact_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: In_P to cb_tact_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.106   0.651  In_P_IBUF (In_P_IBUF)
+     LUT2:I0->O            2   0.612   0.449  dRXPN1 (dRXPN_OBUF)
+     LUT4:I1->O            3   0.612   0.451  cb_tact_and00001 (cb_tact_and0000)
+     FDRS:R                    0.795          cb_tact_0
+    ----------------------------------------
+    Total                      4.676ns (3.125ns logic, 1.551ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 89 / 40
+-------------------------------------------------------------------------
+Offset:              7.233ns (Levels of Logic = 4)
+  Source:            cb_rx_bit_3 (FF)
+  Destination:       ok_rx (PAD)
+  Source Clock:      clk rising
+
+  Data Path: cb_rx_bit_3 to ok_rx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             4   0.514   0.651  cb_rx_bit_3 (cb_rx_bit_3)
+     LUT4_L:I0->LO         1   0.612   0.103  T_end_SW0 (N2)
+     LUT4:I3->O            3   0.612   0.603  T_end (T_end_OBUF)
+     LUT3:I0->O            1   0.612   0.357  ok_rx1 (ok_rx_OBUF)
+     OBUF:I->O                 3.169          ok_rx_OBUF (ok_rx)
+    ----------------------------------------
+    Total                      7.233ns (5.519ns logic, 1.714ns route)
+                                       (76.3% logic, 23.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               6.331ns (Levels of Logic = 3)
+  Source:            In_P (PAD)
+  Destination:       ce_bit (PAD)
+
+  Data Path: In_P to ce_bit
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.106   0.651  In_P_IBUF (In_P_IBUF)
+     LUT4:I0->O           11   0.612   0.793  ce_bit1 (cb_tact_cst)
+     OBUF:I->O                 3.169          ce_bit_OBUF (ce_bit)
+    ----------------------------------------
+    Total                      6.331ns (4.887ns logic, 1.444ns route)
+                                       (77.2% logic, 22.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.58 secs
+ 
+--> 
+
+Total memory usage is 151688 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

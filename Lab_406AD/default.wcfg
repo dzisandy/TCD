@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/nikita/Documents/Lab_406AD/MIL_RXD_isim_beh1.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="MIL_RXD" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/MIL_RXD/In_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">In_P</obj_property>
+      <obj_property name="ObjectShortName">In_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/RXN" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RXN</obj_property>
+      <obj_property name="ObjectShortName">RXN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/In_N" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">In_N</obj_property>
+      <obj_property name="ObjectShortName">In_N</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/RXP" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RXP</obj_property>
+      <obj_property name="ObjectShortName">RXP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/clk" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="label">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/D_RXN" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">D_RXN</obj_property>
+      <obj_property name="ObjectShortName">D_RXN</obj_property>
+      <obj_property name="label">D_RXN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/D_RXP" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">D_RXP</obj_property>
+      <obj_property name="ObjectShortName">D_RXP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/ok_SY_DW" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ok_SY_DW</obj_property>
+      <obj_property name="ObjectShortName">ok_SY_DW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/ok_SY_CW" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ok_SY_CW</obj_property>
+      <obj_property name="ObjectShortName">ok_SY_CW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/DW_detect" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DW_detect</obj_property>
+      <obj_property name="ObjectShortName">DW_detect</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/CW_detect" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CW_detect</obj_property>
+      <obj_property name="ObjectShortName">CW_detect</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/P_delay" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">P_delay[1:0]</obj_property>
+      <obj_property name="ObjectShortName">P_delay[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/N_delay" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">N_delay[1:0]</obj_property>
+      <obj_property name="ObjectShortName">N_delay[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/sr_RXN" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sr_RXN[74:0]</obj_property>
+      <obj_property name="ObjectShortName">sr_RXN[74:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/sr_RXP" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sr_RXP[74:0]</obj_property>
+      <obj_property name="ObjectShortName">sr_RXP[74:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/cb_SY_DW" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cb_SY_DW[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cb_SY_DW[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIL_RXD/cb_SY_CW" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cb_SY_CW[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cb_SY_CW[7:0]</obj_property>
+   </wvobject>
+</wave_config>

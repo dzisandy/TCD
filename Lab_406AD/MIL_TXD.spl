@@ -1,0 +1,20 @@
+[Inputs]
+clk
+txen
+=dat[15:0]=
+[Outputs]
+TXP
+TXN
+SY1
+SY2
+en_tx
+T_dat
+T_end
+SDAT
+FT_cp
+ce_tact
+=cb_bit[4:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel MIL_TXD
+

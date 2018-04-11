@@ -1,0 +1,28 @@
+Command line:
+   MIL_RXD_tf_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1044
+
+Thu Mar 29 10:16:05 2018
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 332.46 Meg
+
+ Total Signals          : 76
+ Total Nets             : 94
+ Total Signal Drivers   : 46
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 54
+ Total Traceable Variables  : 52
+ Total Scalar Nets and Variables : 574
+
+ Total Simulation Time: 0.8125 sec
+
+ Current Memory Usage: 333.509 Meg
+
+Thu Mar 29 12:17:23 2018
+

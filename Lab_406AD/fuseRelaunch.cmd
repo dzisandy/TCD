@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "G:/Dzis/Lab_406AD/MIL_RXD_tf_isim_beh.exe" -prj "G:/Dzis/Lab_406AD/MIL_RXD_tf_beh.prj" "work.MIL_RXD_tf" "work.glbl" 

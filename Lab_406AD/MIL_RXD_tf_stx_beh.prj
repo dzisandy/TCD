@@ -1,0 +1,4 @@
+verilog isim_temp "MIL_TXD.v"
+verilog isim_temp "MIL_RXD.v"
+verilog isim_temp "MIL_RXD_tf.v"
+verilog isim_temp "C:/Xilinx/14.4/ISE_DS/ISE//verilog/src/glbl.v"

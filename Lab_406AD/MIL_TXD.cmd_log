@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "E:/FRTK/Gorbadey/Lab_406AD/MIL_TXD.xst" -ofn "E:/FRTK/Gorbadey/Lab_406AD/MIL_TXD.syr" 
+vhdtdtfi -lib work G:/Dzis/Lab_406AD/MIL_TXD.v -lang verilog -prj Lab_406AD -o MIL_TXD.spl -module MIL_TXD -template C:/Xilinx/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MIL_TXD.spl G:/Dzis/Lab_406AD/MIL_TXD.sym 
