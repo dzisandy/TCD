@@ -1,0 +1,28 @@
+Command line:
+   AR_TXD_tf_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53497
+
+Wed Apr 18 16:41:21 2018
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 876.577 Meg
+
+ Total Signals          : 40
+ Total Nets             : 79
+ Total Signal Drivers   : 26
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 30
+ Total Traceable Variables  : 37
+ Total Scalar Nets and Variables : 438
+
+ Total Simulation Time: 0.265625 sec
+
+ Current Memory Usage: 1191.15 Meg
+
+Wed Apr 18 16:42:10 2018
+

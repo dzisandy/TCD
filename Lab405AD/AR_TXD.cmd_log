@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/FRTK/411/Burkina/Lab405AD/AR_TXD.xst" -ofn "E:/FRTK/411/Burkina/Lab405AD/AR_TXD.syr" 

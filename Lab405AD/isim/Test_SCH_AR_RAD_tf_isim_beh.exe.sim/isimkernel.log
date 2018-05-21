@@ -1,0 +1,28 @@
+Command line:
+   Test_SCH_AR_RAD_tf_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1043
+
+Thu Apr 19 11:45:33 2018
+
+
+ Elaboration Time: 0.140625 sec
+
+ Current Memory Usage: 332.452 Meg
+
+ Total Signals          : 74
+ Total Nets             : 120
+ Total Signal Drivers   : 34
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 39
+ Total Traceable Variables  : 47
+ Total Scalar Nets and Variables : 537
+
+ Total Simulation Time: 0.71875 sec
+
+ Current Memory Usage: 333.5 Meg
+
+Thu Apr 19 12:10:52 2018
+

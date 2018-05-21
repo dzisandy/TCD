@@ -1,0 +1,444 @@
+Release 14.4 - xst P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: AR_TXD.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "AR_TXD.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "AR_TXD"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : AR_TXD
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "AR_TXD.v" in library work
+Module <AR_TXD> compiled
+No errors in compilation
+Analysis of file <"AR_TXD.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <AR_TXD> in library <work> with parameters.
+	Fclk = "00000010111110101111000010000000"
+	V100kb = "00000000000000011000011010100000"
+	V12_5kb = "00000000000000000011000011010100"
+	V1Mb = "00000000000011110100001001000000"
+	V50kb = "00000000000000001100001101010000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <AR_TXD>.
+	Fclk = 32'sb00000010111110101111000010000000
+	V100kb = 32'sb00000000000000011000011010100000
+	V12_5kb = 32'sb00000000000000000011000011010100
+	V1Mb = 32'sb00000000000011110100001001000000
+	V50kb = 32'sb00000000000000001100001101010000
+Module <AR_TXD> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <AR_TXD>.
+    Related source file is "AR_TXD.v".
+    Found 4x11-bit ROM for signal <AR_Nt>.
+    Found 1-bit register for signal <FT_cp>.
+    Found 1-bit register for signal <QM>.
+    Found 6-bit up counter for signal <cb_bit>.
+    Found 1-bit register for signal <en_tx>.
+    Found 1-bit register for signal <en_tx_word>.
+    Found 11-bit up counter for signal <cb_ce>.
+    Found 11-bit comparator equal for signal <ce>.
+    Found 8-bit register for signal <sr_adr>.
+    Found 23-bit register for signal <sr_dat>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   2 Counter(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <AR_TXD> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x11-bit ROM                                          : 1
+# Counters                                             : 2
+ 11-bit up counter                                     : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 6
+ 1-bit register                                        : 4
+ 23-bit register                                       : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 11-bit comparator equal                               : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x11-bit ROM                                          : 1
+# Counters                                             : 2
+ 11-bit up counter                                     : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 35
+ Flip-Flops                                            : 35
+# Comparators                                          : 1
+ 11-bit comparator equal                               : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <AR_TXD> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block AR_TXD, actual ratio is 0.
+FlipFlop en_tx_word has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 53
+ Flip-Flops                                            : 53
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : AR_TXD.ngr
+Top Level Output File Name         : AR_TXD
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 51
+
+Cell Usage :
+# BELS                             : 108
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 11
+#      LUT2                        : 11
+#      LUT2_L                      : 2
+#      LUT3                        : 9
+#      LUT3_L                      : 1
+#      LUT4                        : 41
+#      MUXCY                       : 16
+#      VCC                         : 1
+#      XORCY                       : 11
+# FlipFlops/Latches                : 53
+#      FDE                         : 31
+#      FDR                         : 10
+#      FDRE                        : 7
+#      FDS                         : 1
+#      FDSE                        : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 50
+#      IBUF                        : 34
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       42  out of   4656     0%  
+ Number of Slice Flip Flops:             53  out of   9312     0%  
+ Number of 4 input LUTs:                 79  out of   9312     0%  
+ Number of IOs:                          51
+ Number of bonded IOBs:                  51  out of    232    21%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 53    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.663ns (Maximum Frequency: 176.586MHz)
+   Minimum input arrival time before clock: 7.546ns
+   Maximum output required time after clock: 8.519ns
+   Maximum combinational path delay: 9.484ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.663ns (frequency: 176.586MHz)
+  Total number of paths / destination ports: 891 / 114
+-------------------------------------------------------------------------
+Delay:               5.663ns (Levels of Logic = 8)
+  Source:            cb_ce_4 (FF)
+  Destination:       cb_ce_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cb_ce_4 to cb_ce_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.514   0.532  cb_ce_4 (cb_ce_4)
+     LUT1:I0->O            1   0.612   0.000  Mcompar_ce_cy<0>_rt (Mcompar_ce_cy<0>_rt)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_ce_cy<0> (Mcompar_ce_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_ce_cy<1> (Mcompar_ce_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_ce_cy<2> (Mcompar_ce_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_ce_cy<3> (Mcompar_ce_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_ce_cy<4> (Mcompar_ce_cy<4>)
+     MUXCY:CI->O           8   0.399   0.795  Mcompar_ce_cy<5> (Mcompar_ce_cy<5>)
+     LUT2:I0->O           11   0.612   0.793  cb_ce_or00001 (cb_ce_or0000)
+     FDS:S                     0.795          cb_ce_0
+    ----------------------------------------
+    Total                      5.663ns (3.543ns logic, 2.120ns route)
+                                       (62.6% logic, 37.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 910 / 95
+-------------------------------------------------------------------------
+Offset:              7.546ns (Levels of Logic = 9)
+  Source:            Nvel<1> (PAD)
+  Destination:       cb_ce_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: Nvel<1> to cb_ce_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.106   0.754  Nvel_1_IBUF (AR_Nt<3>)
+     LUT2:I0->O            1   0.612   0.509  Mrom_AR_Nt111 (AR_Nt<1>)
+     LUT4:I0->O            1   0.612   0.000  Mcompar_ce_lut<1> (Mcompar_ce_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_ce_cy<1> (Mcompar_ce_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_ce_cy<2> (Mcompar_ce_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_ce_cy<3> (Mcompar_ce_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_ce_cy<4> (Mcompar_ce_cy<4>)
+     MUXCY:CI->O           8   0.399   0.795  Mcompar_ce_cy<5> (Mcompar_ce_cy<5>)
+     LUT2:I0->O           11   0.612   0.793  cb_ce_or00001 (cb_ce_or0000)
+     FDS:S                     0.795          cb_ce_0
+    ----------------------------------------
+    Total                      7.546ns (4.695ns logic, 2.851ns route)
+                                       (62.2% logic, 37.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 56 / 15
+-------------------------------------------------------------------------
+Offset:              8.519ns (Levels of Logic = 5)
+  Source:            cb_bit_0 (FF)
+  Destination:       TXD0 (PAD)
+  Source Clock:      clk rising
+
+  Data Path: cb_bit_0 to TXD0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             8   0.514   0.673  cb_bit_0 (cb_bit_0)
+     LUT3_L:I2->LO         1   0.612   0.103  T_cp_SW0 (N1)
+     LUT4:I3->O            4   0.612   0.651  T_cp (T_cp_OBUF)
+     LUT3:I0->O            3   0.612   0.603  SDAT1 (SDAT_OBUF)
+     LUT3:I0->O            1   0.612   0.357  TXD01 (TXD0_OBUF)
+     OBUF:I->O                 3.169          TXD0_OBUF (TXD0)
+    ----------------------------------------
+    Total                      8.519ns (6.131ns logic, 2.388ns route)
+                                       (72.0% logic, 28.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 17 / 2
+-------------------------------------------------------------------------
+Delay:               9.484ns (Levels of Logic = 10)
+  Source:            Nvel<1> (PAD)
+  Destination:       ce_tact (PAD)
+
+  Data Path: Nvel<1> to ce_tact
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.106   0.754  Nvel_1_IBUF (AR_Nt<3>)
+     LUT2:I0->O            1   0.612   0.509  Mrom_AR_Nt111 (AR_Nt<1>)
+     LUT4:I0->O            1   0.612   0.000  Mcompar_ce_lut<1> (Mcompar_ce_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_ce_cy<1> (Mcompar_ce_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_ce_cy<2> (Mcompar_ce_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_ce_cy<3> (Mcompar_ce_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_ce_cy<4> (Mcompar_ce_cy<4>)
+     MUXCY:CI->O           8   0.399   0.795  Mcompar_ce_cy<5> (Mcompar_ce_cy<5>)
+     LUT2:I0->O            1   0.612   0.357  ce_tact1 (ce_tact_OBUF)
+     OBUF:I->O                 3.169          ce_tact_OBUF (ce_tact)
+    ----------------------------------------
+    Total                      9.484ns (7.069ns logic, 2.415ns route)
+                                       (74.5% logic, 25.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.97 secs
+ 
+--> 
+
+Total memory usage is 146572 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

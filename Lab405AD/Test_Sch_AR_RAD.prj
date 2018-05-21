@@ -1,0 +1,3 @@
+verilog work "AR_TXD.v"
+verilog work "AR_RXD.v"
+verilog work "Test_Sch_AR_RAD.v"

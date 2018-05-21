@@ -1,0 +1,10 @@
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o G:/Dzis/404_1B/Lab404_1B/tf_UTXD1B_isim_beh.exe -prj G:/Dzis/404_1B/Lab404_1B/tf_UTXD1B_beh.prj work.tf_UTXD1B work.glbl 
+ISim P.49d (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "G:/Dzis/404_1B/Lab404_1B/UTXD1B.v" into library work
+Analyzing Verilog file "G:/Dzis/404_1B/Lab404_1B/tf_UTXD1B.v" into library work
+ERROR:HDLCompiler:806 - "G:/Dzis/404_1B/Lab404_1B/tf_UTXD1B.v" Line 65: Syntax error near "always".
+ERROR:HDLCompiler:598 - "G:/Dzis/404_1B/Lab404_1B/tf_UTXD1B.v" Line 25: Module <tf_UTXD1B> ignored due to previous errors.
+Verilog file G:/Dzis/404_1B/Lab404_1B/tf_UTXD1B.v ignored due to errors

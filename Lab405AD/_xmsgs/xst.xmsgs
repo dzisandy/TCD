@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompilers" num="27" delta="new" ><arg fmt="%s" index="1">&quot;AR_RXD.v&quot; line 31 </arg>Illegal redeclaration of &apos;<arg fmt="%s" index="2">cb_res</arg>&apos;
+</msg>
+
+</messages>
+

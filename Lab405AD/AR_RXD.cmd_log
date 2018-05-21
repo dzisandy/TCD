@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.xst" -ofn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 AR_RXD.ngc AR_RXD.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o AR_RXD_map.ncd AR_RXD.ngd AR_RXD.pcf 
+par -w -intstyle ise -ol high -t 1 AR_RXD_map.ncd AR_RXD.ncd AR_RXD.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml AR_RXD.twx AR_RXD.ncd -o AR_RXD.twr AR_RXD.pcf 
+xst -intstyle ise -ifn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.xst" -ofn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.syr" 
+xst -intstyle ise -ifn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.xst" -ofn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.syr" 
+xst -intstyle ise -ifn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.xst" -ofn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.syr" 
+xst -intstyle ise -ifn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.xst" -ofn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.syr" 
+xst -intstyle ise -ifn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.xst" -ofn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.syr" 
+xst -intstyle ise -ifn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.xst" -ofn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.syr" 
+xst -intstyle ise -ifn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.xst" -ofn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.syr" 
+xst -intstyle ise -ifn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.xst" -ofn "E:/FRTK/411/Burkina/Lab405AD/AR_RXD.syr" 
+xst -intstyle ise -ifn "G:/Lab405AD/AR_RXD.xst" -ofn "G:/Lab405AD/AR_RXD.syr" 
