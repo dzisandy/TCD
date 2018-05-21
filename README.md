@@ -20,7 +20,7 @@
 3. **Лабораторная работа 405AD (3 вариант)**
 * [Методическое пособие](https://github.com/dzisandy/TCD/blob/master/Materials/PDF_Lab_TKU_2018/Lab405AD_180122.pdf) 
 * [Файлы проекта](https://github.com/dzisandy/TCD/tree/master/Lab401N) 
-* [Выполнение(скриншоты)](https://github.com/dzisandy/TCD/tree/master/Lab401N/401N%20pictures)
+* [Выполнение(скриншоты)](https://github.com/dzisandy/TCD/tree/master/Lab401N/401N)
 
 3. **Лабораторная работа 405AD (3 вариант)**
 * [Методическое пособие](https://github.com/dzisandy/TCD/blob/master/Materials/PDF_Lab_TKU_2018/Lab405AD_180122.pdf) 
@@ -32,7 +32,7 @@
 * [Файлы проекта](https://github.com/dzisandy/TCD/tree/master/Lab404_1B) 
 
 ## Результат
- По результатам работы выполнены все задания на допуск и выполнение. Задания на сдачу выполнено только в 1 работе.
+ По результатам работы выполнены все задания на допуск и выполнение. Задания на сдачу выполнено только в первой работе.
 
 
 ## Обо мне
