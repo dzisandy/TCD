@@ -17,11 +17,12 @@
 * [Методическое пособие](https://github.com/dzisandy/TCD/blob/master/Materials/PDF_Lab_TKU_2018/Lab406AD_180207.pdf) 
 * [Файлы проекта](https://github.com/dzisandy/TCD/tree/master/Lab406AD) 
 
-
-## Обо мне
-* **Дзись Андрей** - *Стажер-исследователь ИППИ РАН* - [dzisandy](https://github.com/dzisandy)
-
 3. **Лабораторная работа 405AD (3 вариант)**
 * [Методическое пособие](https://github.com/dzisandy/TCD/blob/master/Materials/PDF_Lab_TKU_2018/Lab405AD_180122.pdf) 
 * [Файлы проекта](https://github.com/dzisandy/TCD/tree/master/Lab401N) 
 * [Выполнение(скриншоты)](https://github.com/dzisandy/TCD/tree/master/Lab401N/401N%20pictures)
+
+## Обо мне
+* **Дзись Андрей** - *Стажер-исследователь ИППИ РАН* - [dzisandy](https://github.com/dzisandy)
+
+
